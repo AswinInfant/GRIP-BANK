@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+   <meta charset="utf-8">
+  <title>BANK-VIEW</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+ top:0;
+ box-shadow: 0px 5px #07151f;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #07151f;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.box input[type = "submit"]{
+  border:0;
+  color: black;
+ 
+  background: transparent;
+  
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #07151f;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  display:block;
+}
+
+.box input[type = "submit"]:hover{
+  background: #777;
+}
+
+.image-container {
+  background-image: url("back3.jpg");
+  background-size: cover;
+  position: relative;
+  height: 50vh;
+}
+
+.text {
+  background-color: white;
+  color: black;
+  font-size: 7vw; 
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="viewsingle.html">View Single Customer</a>
+</div>
+<section><p></p></section>
+<div class="image-container">
+  <div class="text">BANK NAME</div>
+</div>
+<p style="color:#07151f;font-size:24px;text-align: center;">Click the button below to view all the customers of the bank!! </p>
+<form  class="box" action="search11.php" method="POST">
+
+  
+ 
+  <input type="submit" name="" value="View  Customers">
+</form>
+</body>
+</html>

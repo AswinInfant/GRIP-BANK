@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BANK-VIEW SINGLE CUSTOMER</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+ top:0;
+ box-shadow: 0px 5px #07151f;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #07151f;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+.box{
+
+  position: relative;
+  color: #07151f;
+  text-align: center;
+    
+}
+
+.box input[type = "text"]{
+  border:0;
+  color: red;
+  background: white;
+  display: inline;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #07151f;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+}
+.image-container {
+  background-image: url("back3.jpg");
+  background-size: cover;
+  position: relative;
+  height: 50vh;
+}
+
+.text {
+  background-color: white;
+  color: black;
+  font-size: 7vw; 
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+.box input[type = "submit"]{
+  border:0;
+  color: black;
+ 
+  background: transparent;
+  
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #07151f;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  display:block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="view.html">View Customers</a>
+</div>
+<section><p></p></section>
+<div class="image-container">
+  <div class="text">BANK NAME</div>
+</div>
+<p style="color:#07151f;font-size:24px;text-align:center;">Enter the account numbers</p>
+  <form class="box" action="search31.php" method="POST">
+    
+  
+  <input type="text" name="ACCNO1" placeholder="Enter sender's acc.no.">
+  
+  <input type="text" name="ACCNO2" placeholder="Enter receiver's acc.no.">
+ 
+  <input type="text" name="FUND" placeholder="Enter the amt">
+  <input type="submit" name="" value="Transfer">
+</form>
+
+</body>
+</html>
